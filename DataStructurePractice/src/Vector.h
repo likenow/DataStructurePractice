@@ -35,7 +35,7 @@ public:
 	{
 		VectorIterator iterator = *this;
 		++(*this);
-		return *this;
+		return iterator;
 	}
 
 	VectorIterator& operator--()
@@ -48,7 +48,7 @@ public:
 	{
 		VectorIterator iterator = *this;
 		--(*this);
-		return *this;
+		return iterator;
 	}
 
 	bool operator==(const VectorIterator& other) const
